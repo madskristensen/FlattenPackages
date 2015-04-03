@@ -1,10 +1,10 @@
 ## Flatten Packages for Visual Studio
 
-[![Build status](https://ci.appveyor.com/api/projects/status/7l4iyu356ci5yy2u?svg=true)](https://ci.appveyor.com/project/madskristensen/reactsnippetpack)
+[![Build status](https://ci.appveyor.com/api/projects/status/h2vx946kn0fsfuf1?svg=true)](https://ci.appveyor.com/project/madskristensen/flattenpackages)
 
 Flattens `node-modules` folder to avoid long path issues on Windows.
 
-Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/234d79e9-f0fd-41e1-a926-850da8e8c7d7)
+Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/cd0b1938-4513-4e57-b9b7-c674b4a20e79)
 or get the [nightly build](http://vsixgallery.com/extension/a7dff10f-3592-429c-9dc1-622fe517921d/).
 
 ### Features
