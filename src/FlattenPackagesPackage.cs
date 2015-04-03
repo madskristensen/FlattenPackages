@@ -100,14 +100,18 @@ namespace MadsKristensen.FlattenPackages
 
         private string GetSelectedItemPath()
         {
-            var items = (Array)_dte.ToolWindows.SolutionExplorer.SelectedItems;
-            foreach (UIHierarchyItem selItem in items)
+            try
             {
-                var item = selItem.Object as ProjectItem;
+                var items = (Array)_dte.ToolWindows.SolutionExplorer.SelectedItems;
+                foreach (UIHierarchyItem selItem in items)
+                {
+                    var item = selItem.Object as ProjectItem;
 
-                if (item != null && item.Properties != null)
-                    return item.Properties.Item("FullPath").Value.ToString();
+                    if (item != null && item.Properties != null)
+                        return item.Properties.Item("FullPath").Value.ToString();
+                }
             }
+            catch { /* Something weird is happening. Ignore this and return null */}
 
             return null;
         }
