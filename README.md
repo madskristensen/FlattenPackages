@@ -4,8 +4,10 @@
 
 Flattens `node-modules` folder to avoid long path issues on Windows.
 
+**Important!** [Node.js](http://nodejs.org) MUST be installed for this to work.
+
 Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/cd0b1938-4513-4e57-b9b7-c674b4a20e79)
-or get the [nightly build](http://vsixgallery.com/extension/a7dff10f-3592-429c-9dc1-622fe517921d/).
+or get the [nightly build](http://vsixgallery.com/extension/96559c66-f326-40e2-95c1-449a80387524/).
 
 ### Features
 
@@ -29,5 +31,5 @@ in the `node_modules` folder.
 ![React Snippet Pack](art/normal-run.png)
 
 Since the extension uses a Node module behind the scenes, the package
-flattening will work with long paths that Windows and Visual Studio 
+flattening will work with long paths that Windows and Visual Studio
 normally can't handle.

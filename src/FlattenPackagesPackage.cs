@@ -77,7 +77,7 @@ namespace MadsKristensen.FlattenPackages
             bool moduleInstalled = ProcessHelper.IsNodeModuleInstalled();
             if (!moduleInstalled)
             {
-                string firstTime = "The first time you run this command I will have to install the 'flatten-packages' npm package globally. \r\r It runs 'npm install flatten-packages -g' \r\rDo you wish to install it (internet connection required)?";
+                string firstTime = "The first time you run this command I will have to install the 'flatten-packages' npm package globally. \r\r I'll run 'npm install flatten-packages -g' \r\rDo you wish to install it (internet connection required)?";
                 var result = MessageBox.Show(firstTime, Name, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
                 if (result != DialogResult.OK)
