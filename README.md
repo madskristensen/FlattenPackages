@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/h2vx946kn0fsfuf1?svg=true)](https://ci.appveyor.com/project/madskristensen/flattenpackages)
 
-Flattens `node-modules` folder to avoid long path issues on Windows.
+Flattens `node_modules` folder to avoid long path issues on Windows.
 
 **Important!** [Node.js](http://nodejs.org) MUST be installed for this to work.
 
