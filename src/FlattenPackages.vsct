@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <Extern href="stdidcmd.h"/>
-  <Extern href="vsshlids.h"/>
+    <Extern href="stdidcmd.h"/>
+    <Extern href="vsshlids.h"/>
 
-  <Commands package="guidFlattenPackagesPkg">
-    <Groups>
-      <Group guid="guidFlattenPackagesCmdSet" id="MyMenuGroup" priority="0x0400">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
-      </Group>
-    </Groups>
+    <Commands package="guidFlattenPackagesPkg">
+        <Groups>
+            <Group guid="guidFlattenPackagesCmdSet" id="MyMenuGroup" priority="0x0400">
+                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+            </Group>
+        </Groups>
 
-    <Buttons>
-      <Button guid="guidFlattenPackagesCmdSet" id="cmdidFlattenPackages" priority="0x0100" type="Button">
-        <Parent guid="guidFlattenPackagesCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidImages" id="flatten" />
-        <CommandFlag>DefaultDisabled</CommandFlag>
-        <Strings>
-          <ButtonText>Flatten Packages...</ButtonText>
-        </Strings>
-      </Button>
-    </Buttons>
+        <Buttons>
+            <Button guid="guidFlattenPackagesCmdSet" id="cmdidFlattenPackages" priority="0x0100" type="Button">
+                <Parent guid="guidFlattenPackagesCmdSet" id="MyMenuGroup" />
+                <Icon guid="guidImages" id="flatten" />
+                <CommandFlag>DynamicVisibility</CommandFlag>
+                <Strings>
+                    <ButtonText>Flatten Packages...</ButtonText>
+                </Strings>
+            </Button>
+        </Buttons>
 
-    <Bitmaps>
-      <Bitmap guid="guidImages" href="Resources\button.png" usedList="flatten"/>
-    </Bitmaps>
-  </Commands>
-  
-  <CommandPlacements>
+        <Bitmaps>
+            <Bitmap guid="guidImages" href="Resources\button.png" usedList="flatten"/>
+        </Bitmaps>
+    </Commands>
+
+    <CommandPlacements>
         <CommandPlacement guid="guidFlattenPackagesCmdSet" id="MyMenuGroup" priority="0x0010">
             <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_WEBITEMNODE"/>
         </CommandPlacement>
@@ -48,18 +48,18 @@
         </CommandPlacement>-->
     </CommandPlacements>
 
-  <Symbols>
-    <!-- This is the package guid. -->
-    <GuidSymbol name="guidFlattenPackagesPkg" value="{96559c66-f326-40e2-95c1-449a80387524}" />
+    <Symbols>
+        <!-- This is the package guid. -->
+        <GuidSymbol name="guidFlattenPackagesPkg" value="{96559c66-f326-40e2-95c1-449a80387524}" />
 
-    <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidFlattenPackagesCmdSet" value="{d09a3dfa-d8e5-473a-8093-1ff848784077}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdidFlattenPackages" value="0x0100" />
-    </GuidSymbol>
+        <!-- This is the guid used to group the menu commands together -->
+        <GuidSymbol name="guidFlattenPackagesCmdSet" value="{d09a3dfa-d8e5-473a-8093-1ff848784077}">
+            <IDSymbol name="MyMenuGroup" value="0x1020" />
+            <IDSymbol name="cmdidFlattenPackages" value="0x0100" />
+        </GuidSymbol>
 
-    <GuidSymbol name="guidImages" value="{06589381-79d3-4848-b531-fbfe17491dd4}" >
-      <IDSymbol name="flatten" value="1" />
-    </GuidSymbol>
-  </Symbols>
+        <GuidSymbol name="guidImages" value="{06589381-79d3-4848-b531-fbfe17491dd4}" >
+            <IDSymbol name="flatten" value="1" />
+        </GuidSymbol>
+    </Symbols>
 </CommandTable>

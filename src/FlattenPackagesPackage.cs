@@ -41,6 +41,7 @@ namespace MadsKristensen.FlattenPackages
         private void BeforeButtonClicked(object sender, EventArgs e)
         {
             OleMenuCommand button = (OleMenuCommand)sender;
+            button.Visible = false;
 
             string item = GetSelectedItemPath();
 
@@ -69,7 +70,7 @@ namespace MadsKristensen.FlattenPackages
             _directory = directory;
 
             if (Directory.Exists(_directory))
-                button.Enabled = true;
+                button.Visible = true;
         }
 
         private void ButtonClicked(object sender, EventArgs e)
