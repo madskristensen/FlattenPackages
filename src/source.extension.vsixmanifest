@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="96559c66-f326-40e2-95c1-449a80387524" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
+        <Identity Id="96559c66-f326-40e2-95c1-449a80387524" Version="1.1" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>Flatten Packages</DisplayName>
         <Description xml:space="preserve">Flattens the node_modules folder hierarchy by using the "flatten-packages" npm package behind the scenes. Works with long paths.
 
@@ -12,8 +12,8 @@ Requires Node.js installed on the machine</Description>
         <Tags>npm, node, modules</Tags>
     </Metadata>
     <Installation InstalledByMsi="false">
-      <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
-      <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="12.0" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="12.0" />
         <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="14.0" />
     </Installation>
     <Dependencies>
